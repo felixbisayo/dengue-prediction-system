@@ -1,0 +1,28 @@
+[project]
+name = "dengue-prediction-system"
+version = "1.0.0"
+description = "A machine-learning-based dengue fever prediction desktop application built with Python and Flet."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flet>=0.84.0",
+    "joblib",
+    "numpy",
+    "scikit-learn",
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.84.0",
+    "flet-desktop>=0.84.0",
+    "flet-web>=0.84.0",
+]
+
+[tool.flet]
+org = "com.felixbisayo"
+product = "Dengue Prediction System"
+company = "Felix Bisayo"
+copyright = "Copyright (C) 2026 Felix Bisayo"
+
+[tool.flet.app]
+path = "src"
